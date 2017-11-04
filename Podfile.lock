@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (4.5.1)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
+  - OAuthSwift (1.2.0)
+  - SwiftLint (0.23.1)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - AlamofireImage (~> 3.3)
+  - OAuthSwift (~> 1.2.0)
+  - SwiftLint
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  OAuthSwift: 7fd6855b8e4d58eb5a30d156ea9bed7a8aecd1ca
+  SwiftLint: 1b670ce79284c76520f84060e87d645078fd32fa
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: a468a2071aefd1c32d77dbeda92a85668db7519c
+
+COCOAPODS: 1.2.1
