@@ -8,20 +8,24 @@
 
 import Foundation
 import OAuthSwift
+import SwiftyJSON
+import Alamofire
 
 protocol API {
-    func getToekn(handler: @escaping (() -> Void))
+    typealias IssueResponsesHandler = (DataResponse<[Model.Issue]>) -> Void
+    func getToken(handler: @escaping (() -> Void))
     func tokenRefresh(handler: @escaping (() -> Void))
+    func repoIssues(owner: String, repo: String, page: Int, handler: @escaping IssueResponsesHandler) -> Void
 }
 
 struct GitHubAPI: API {
-    let oauth =  OAuth2Swift(consumerKey: "06eae7a4010c6f263244",
-                             consumerSecret: "d2fb81215a65fbc10f6eff4daf31ed8fcbb711e6",
+    let oauth =  OAuth2Swift(consumerKey: "dc7db1de744aa3e82a47",
+                             consumerSecret: "554a3e9b89f140736050a37e3e37379aa3bc7e39",
                              authorizeUrl: "https://github.com/login/oauth/authorize",
                              accessTokenUrl: "https://github.com/login/oauth/access_token",
                              responseType: "code")
     
-    func getToekn(handler: @escaping (() -> Void)) {
+    func getToken(handler: @escaping (() -> Void)) {
         oauth.authorize(
             withCallbackURL: "IssuesApp://oauth-callback/github",
             scope: "user, repo",
@@ -48,5 +52,18 @@ struct GitHubAPI: API {
             failure: { error in
                 print(error.localizedDescription)
         })
+    }
+    
+    typealias IssuesResponseHandler = (DataResponse<[Model.Issue]>) -> Void
+    func repoIssues(owner: String, repo: String, page: Int, handler: @escaping IssueResponsesHandler) -> Void {
+        let parameters: Parameters = ["page": page, "state": "all"]
+        GitHubRouter.manager.request(GitHubRouter.repoIssues(owner: owner, repo: repo, parameters: parameters)).responseSwiftyJSON { (dataResponse: DataResponse<JSON>) in
+            let result: DataResponse<[Model.Issue]> = dataResponse.map({ (json: JSON) -> [Model.Issue] in
+                return json.arrayValue.map {
+                    Model.Issue(json: $0)
+                }
+            })
+            handler(result)
+        }
     }
 }

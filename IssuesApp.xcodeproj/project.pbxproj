@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		9FD4FE28B53CD234F42AFBED /* Pods_IssuesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C6EE1CEE1C95679167C8D7 /* Pods_IssuesApp.framework */; };
 		DA5001221FAD798F00680B30 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5001211FAD798F00680B30 /* App.swift */; };
+		DAF5078D1FAD7E4400A4077D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5078C1FAD7E4400A4077D /* Model.swift */; };
+		DAF507901FAD7E8100A4077D /* DataRequest_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5078F1FAD7E8100A4077D /* DataRequest_Extension.swift */; };
+		DAF507931FAD82D300A4077D /* GithubRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF507921FAD82D300A4077D /* GithubRouter.swift */; };
+		DAF507981FAD830B00A4077D /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF507971FAD830B00A4077D /* GithubAPI.swift */; };
+		DAF5079A1FAD8E2100A4077D /* RepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF507991FAD8E2100A4077D /* RepoViewController.swift */; };
+		DAF5079C1FAD95C300A4077D /* IssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5079B1FAD95C300A4077D /* IssuesViewController.swift */; };
+		DAF5079F1FAD9E7A00A4077D /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5079E1FAD9E7A00A4077D /* ReposViewController.swift */; };
+		DAF507A11FADA70B00A4077D /* IssueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF507A01FADA70B00A4077D /* IssueCell.xib */; };
+		DAF507A31FADACD800A4077D /* IssueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF507A21FADACD800A4077D /* IssueCell.swift */; };
+		DAF507A61FADB84C00A4077D /* LoadMoreFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF507A41FADB84B00A4077D /* LoadMoreFooterView.swift */; };
+		DAF507A71FADB84C00A4077D /* LoadMoreFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF507A51FADB84C00A4077D /* LoadMoreFooterView.xib */; };
 		DAF953241FA481A40077CB2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF953231FA481A40077CB2F /* AppDelegate.swift */; };
 		DAF953261FA481A40077CB2F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF953251FA481A40077CB2F /* LoginViewController.swift */; };
 		DAF953291FA481A40077CB2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF953271FA481A40077CB2F /* Main.storyboard */; };
@@ -23,6 +34,17 @@
 		C7F86D86ACF3FB750CDC6C99 /* Pods-IssuesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IssuesApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-IssuesApp/Pods-IssuesApp.release.xcconfig"; sourceTree = "<group>"; };
 		C8C6EE1CEE1C95679167C8D7 /* Pods_IssuesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IssuesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5001211FAD798F00680B30 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		DAF5078C1FAD7E4400A4077D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DAF5078F1FAD7E8100A4077D /* DataRequest_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest_Extension.swift; sourceTree = "<group>"; };
+		DAF507921FAD82D300A4077D /* GithubRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRouter.swift; sourceTree = "<group>"; };
+		DAF507971FAD830B00A4077D /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+		DAF507991FAD8E2100A4077D /* RepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewController.swift; sourceTree = "<group>"; };
+		DAF5079B1FAD95C300A4077D /* IssuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesViewController.swift; sourceTree = "<group>"; };
+		DAF5079E1FAD9E7A00A4077D /* ReposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewController.swift; sourceTree = "<group>"; };
+		DAF507A01FADA70B00A4077D /* IssueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssueCell.xib; sourceTree = "<group>"; };
+		DAF507A21FADACD800A4077D /* IssueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueCell.swift; sourceTree = "<group>"; };
+		DAF507A41FADB84B00A4077D /* LoadMoreFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMoreFooterView.swift; sourceTree = "<group>"; };
+		DAF507A51FADB84C00A4077D /* LoadMoreFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadMoreFooterView.xib; sourceTree = "<group>"; };
 		DAF953201FA481A40077CB2F /* IssuesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IssuesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF953231FA481A40077CB2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAF953251FA481A40077CB2F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -67,10 +89,44 @@
 			isa = PBXGroup;
 			children = (
 				DAF953351FA481AF0077CB2F /* GlobalState.swift */,
-				DAF953371FA483060077CB2F /* API.swift */,
+				DAF5078F1FAD7E8100A4077D /* DataRequest_Extension.swift */,
 				DA5001211FAD798F00680B30 /* App.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		DAF5078E1FAD7E4800A4077D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5078C1FAD7E4400A4077D /* Model.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DAF507911FAD826900A4077D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DAF953371FA483060077CB2F /* API.swift */,
+				DAF507921FAD82D300A4077D /* GithubRouter.swift */,
+				DAF507971FAD830B00A4077D /* GithubAPI.swift */,
+			);
+			name = API;
+			path = "몌ㅑ";
+			sourceTree = "<group>";
+		};
+		DAF5079D1FAD972300A4077D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DAF507A41FADB84B00A4077D /* LoadMoreFooterView.swift */,
+				DAF507A51FADB84C00A4077D /* LoadMoreFooterView.xib */,
+				DAF953251FA481A40077CB2F /* LoginViewController.swift */,
+				DAF5079B1FAD95C300A4077D /* IssuesViewController.swift */,
+				DAF507991FAD8E2100A4077D /* RepoViewController.swift */,
+				DAF507A01FADA70B00A4077D /* IssueCell.xib */,
+				DAF5079E1FAD9E7A00A4077D /* ReposViewController.swift */,
+				DAF507A21FADACD800A4077D /* IssueCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		DAF953171FA481A40077CB2F = {
@@ -95,9 +151,11 @@
 			isa = PBXGroup;
 			children = (
 				DAF953231FA481A40077CB2F /* AppDelegate.swift */,
-				DAF953251FA481A40077CB2F /* LoginViewController.swift */,
+				DAF5078E1FAD7E4800A4077D /* Model */,
+				DAF507911FAD826900A4077D /* API */,
 				DA5001231FAD7A6D00680B30 /* Util */,
 				DAF953271FA481A40077CB2F /* Main.storyboard */,
+				DAF5079D1FAD972300A4077D /* View */,
 				DAF9532A1FA481A40077CB2F /* Assets.xcassets */,
 				DAF9532C1FA481A40077CB2F /* LaunchScreen.storyboard */,
 				DAF9532F1FA481A40077CB2F /* Info.plist */,
@@ -167,9 +225,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF507A71FADB84C00A4077D /* LoadMoreFooterView.xib in Resources */,
 				DAF9532E1FA481A40077CB2F /* LaunchScreen.storyboard in Resources */,
 				DAF9532B1FA481A40077CB2F /* Assets.xcassets in Resources */,
 				DAF953291FA481A40077CB2F /* Main.storyboard in Resources */,
+				DAF507A11FADA70B00A4077D /* IssueCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,10 +288,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF5079F1FAD9E7A00A4077D /* ReposViewController.swift in Sources */,
 				DAF953261FA481A40077CB2F /* LoginViewController.swift in Sources */,
+				DAF507931FAD82D300A4077D /* GithubRouter.swift in Sources */,
 				DAF953241FA481A40077CB2F /* AppDelegate.swift in Sources */,
+				DAF507901FAD7E8100A4077D /* DataRequest_Extension.swift in Sources */,
 				DAF953381FA483060077CB2F /* API.swift in Sources */,
+				DAF5078D1FAD7E4400A4077D /* Model.swift in Sources */,
 				DA5001221FAD798F00680B30 /* App.swift in Sources */,
+				DAF507A61FADB84C00A4077D /* LoadMoreFooterView.swift in Sources */,
+				DAF507981FAD830B00A4077D /* GithubAPI.swift in Sources */,
+				DAF5079A1FAD8E2100A4077D /* RepoViewController.swift in Sources */,
+				DAF507A31FADACD800A4077D /* IssueCell.swift in Sources */,
+				DAF5079C1FAD95C300A4077D /* IssuesViewController.swift in Sources */,
 				DAF953361FA481AF0077CB2F /* GlobalState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
